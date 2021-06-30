@@ -22,7 +22,7 @@ function App() {
       <SideDrawer show={sideToggle} click={() => setsideToggle(false)} />
       <Backdrop show={sideToggle} click={() => setsideToggle(false)} />
       <main>
-        <Switch>
+        <Switch>  
           <Route exact path="/" component={HomeScreen} />
           <Route exact path="/product/:id" component={ProductScreen} />
           <Route exact path="/cart" component={CartScreen} />
